@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook", "Facebook\Facebook.csproj", "{9A24B145-8055-401F-96D5-529D97041641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.Web", "Facebook.Web\Facebook.Web.csproj", "{341DC58A-D562-4A4C-B444-C9060A4B3F22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.Web.Mvc", "Facebook.Web.Mvc\Facebook.Web.Mvc.csproj", "{FCD44797-2A8A-4ACA-8F7A-9FC81A716A57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Facebook API Client", "2. Facebook API Client", "{05104C4C-54AC-4780-BABD-7C2934F7993F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook.Api.DemoSite", "Facebook.Api.DemoSite\Facebook.Api.DemoSite.csproj", "{B84F8DD5-195E-4265-A97C-6858218EAACA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Demo Site", "1. Demo Site", "{5E5D05FA-B4E4-4148-A824-41FF8FE4C531}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A24B145-8055-401F-96D5-529D97041641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A24B145-8055-401F-96D5-529D97041641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A24B145-8055-401F-96D5-529D97041641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A24B145-8055-401F-96D5-529D97041641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{341DC58A-D562-4A4C-B444-C9060A4B3F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{341DC58A-D562-4A4C-B444-C9060A4B3F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{341DC58A-D562-4A4C-B444-C9060A4B3F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{341DC58A-D562-4A4C-B444-C9060A4B3F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCD44797-2A8A-4ACA-8F7A-9FC81A716A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCD44797-2A8A-4ACA-8F7A-9FC81A716A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCD44797-2A8A-4ACA-8F7A-9FC81A716A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCD44797-2A8A-4ACA-8F7A-9FC81A716A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84F8DD5-195E-4265-A97C-6858218EAACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84F8DD5-195E-4265-A97C-6858218EAACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84F8DD5-195E-4265-A97C-6858218EAACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84F8DD5-195E-4265-A97C-6858218EAACA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCD44797-2A8A-4ACA-8F7A-9FC81A716A57} = {05104C4C-54AC-4780-BABD-7C2934F7993F}
+		{9A24B145-8055-401F-96D5-529D97041641} = {05104C4C-54AC-4780-BABD-7C2934F7993F}
+		{341DC58A-D562-4A4C-B444-C9060A4B3F22} = {05104C4C-54AC-4780-BABD-7C2934F7993F}
+		{B84F8DD5-195E-4265-A97C-6858218EAACA} = {5E5D05FA-B4E4-4148-A824-41FF8FE4C531}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1 @@
+// This file is a placeholder to prevent the generated class from being created.

@@ -1,0 +1,7 @@
+(?ixs)<h2.+?>.+?Parameters.+?</h2>.*?
+<table.*?>.*?
+(?:<tr.*?>.*?
+<th.*?>(?<required>\w*\*?)</th>.*?
+<td>\s*(?<paramName>\w+)\s*</td>.*?
+<td>\s*<tt><a.*?>(?<paramType>[\w\s]+)</a></tt>\s*</td>.*?
+<td>\s*(?<paramDescription>.*?)\s*</td>.*?</tr>.*?)+

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<VSContent xmlns="http://schemas.microsoft.com/developer/vscontent/2005">
+  <Content>
+    <FileName>ASP.NET MVC Facebook Application - CSharp.zip</FileName>
+    <DisplayName>ASP.NET MVC Facebook Application C# Template</DisplayName>
+    <Description>A starter kit for creating a Facebook IFrame application using the .NET Facebook API Client and the ASP.NET MVC Framework.</Description>
+    <FileContentType>VSTemplate</FileContentType>
+    <ContentVersion>2.0</ContentVersion>
+    <Attributes>
+      <Attribute name="TemplateType" value="Project" />
+      <Attribute name="ProjectType" value="Visual C#" />
+      <Attribute name="ProjectSubType" value="Web" />
+    </Attributes>
+  </Content>
+  <Content>
+    <FileName>ASP.NET MVC Facebook Application - VB.zip</FileName>
+    <DisplayName>ASP.NET MVC Facebook Application VB.NET Template</DisplayName>
+    <Description>A starter kit for creating a Facebook IFrame application using the .NET Facebook API Client and the ASP.NET MVC Framework.</Description>
+    <FileContentType>VSTemplate</FileContentType>
+    <ContentVersion>2.0</ContentVersion>
+    <Attributes>
+      <Attribute name="TemplateType" value="Project" />
+      <Attribute name="ProjectType" value="Visual Basic" />
+      <Attribute name="ProjectSubType" value="Web" />
+    </Attributes> 
+  </Content>  
+</VSContent>

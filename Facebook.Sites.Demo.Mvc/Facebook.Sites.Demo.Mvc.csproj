@@ -1,0 +1,225 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B84F8DD5-195E-4265-A97C-6858218EAACA}</ProjectGuid>
+    <ProjectTypeGuids>{603c0e0b-db56-11dc-be95-000d561079b0};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Facebook.Api.DemoSite</RootNamespace>
+    <AssemblyName>Facebook.Api.DemoSite</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Content\Notifications.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Notifications.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\DemoController.Admin.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.Application.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.cs" />
+    <Compile Include="Controllers\DemoController.Links.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.LiveMessage.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.Notes.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.Feed.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.Status.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.Fql.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RedirectController.cs" />
+    <Compile Include="Controllers\DemoController.Users.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.Stream.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\DemoController.Headliners.cs">
+      <DependentUpon>DemoController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Demo\AdminIndexData.cs" />
+    <Compile Include="Models\Demo\FeedIndexData.cs" />
+    <Compile Include="Models\Demo\LinksIndexData.cs" />
+    <Compile Include="Models\Demo\StatusIndexData.cs" />
+    <Compile Include="Models\Demo\UsersIndexData.cs" />
+    <Compile Include="Models\Demo\StreamIndexData.cs" />
+    <Compile Include="Models\Demo\StreamPartialPost.cs" />
+    <Compile Include="Models\FbRedirectResult.cs" />
+    <Compile Include="Models\HttpNotFoundResult.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Demo\Users.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.3.1.js" />
+    <Content Include="Scripts\jquery-1.3.1.min.js" />
+    <Content Include="Scripts\jquery-1.3.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.3.1.min-vsdoc.js" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Facebook.Web.Mvc\Facebook.Web.Mvc.csproj">
+      <Project>{FCD44797-2A8A-4ACA-8F7A-9FC81A716A57}</Project>
+      <Name>Facebook.Web.Mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facebook.Web\Facebook.Web.csproj">
+      <Project>{341DC58A-D562-4A4C-B444-C9060A4B3F22}</Project>
+      <Name>Facebook.Web</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facebook\Facebook.csproj">
+      <Project>{9A24B145-8055-401F-96D5-529D97041641}</Project>
+      <Name>Facebook</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Newtonsoft.Json\Newtonsoft.Json.csproj">
+      <Project>{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.appSettings.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\facebook.css" />
+    <Content Include="Scripts\asyncForm.js" />
+    <Content Include="Scripts\dotnetapi.js" />
+    <Content Include="Views\Auth\Login.aspx" />
+    <Content Include="Views\Demo\Admin.aspx" />
+    <Content Include="Views\Demo\Application.aspx" />
+    <Content Include="Views\Demo\Feed.aspx" />
+    <Content Include="Views\Demo\Fql.aspx" />
+    <Content Include="Views\Demo\Headliners.aspx" />
+    <Content Include="Views\Demo\Links.aspx" />
+    <Content Include="Views\Demo\LiveMessage.aspx" />
+    <Content Include="Views\Demo\Notes.aspx" />
+    <Content Include="Views\Demo\Notifications.aspx" />
+    <Content Include="Views\Demo\Status.aspx" />
+    <Content Include="Views\Demo\Stream.aspx" />
+    <Content Include="Views\Shared\StreamItem-Wall.ascx" />
+    <Content Include="Views\Shared\StreamItem-FanPage.ascx" />
+    <Content Include="Views\Shared\StreamItem-Feed.ascx" />
+    <Content Include="Views\Shared\StreamItem-Video.ascx" />
+    <Content Include="Views\Shared\StreamItem.ascx" />
+    <Content Include="Views\Shared\StreamItem-Photo.ascx" />
+    <Content Include="Views\Shared\StreamItem-Link.ascx" />
+    <Content Include="Views\Shared\StreamItem-Other.ascx" />
+    <Content Include="Views\Shared\StreamItem-Status.ascx" />
+    <Content Include="Views\Shared\AsyncPostResult.ascx" />
+    <Content Include="web.facebook.templates.config" />
+    <Content Include="xd_receiver.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Content\Notifications.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Notifications.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>9877</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/Facebook.Api.DemoSite</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

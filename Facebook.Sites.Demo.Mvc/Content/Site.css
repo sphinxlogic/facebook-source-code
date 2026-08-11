@@ -1,0 +1,22 @@
+﻿
+#page{min-width:600px;}
+
+div.section { }
+div.section h2 { }
+div.section div.content { }
+
+table.form { }
+table.form tr { }
+table.form tr td { vertical-align:top; }
+table.form tr td label { font-weight: bold; color:#777; padding: 5px 10px 0 0; display:block;text-align:right; }
+table.form tr td input,
+table.form tr td textarea { width: 400px; border: solid 1px #d8dfea; padding:3px; }
+table.form tr td textarea { height: 75px; }
+button{margin:0 2px;padding:2px 18px;border:1px solid #d8dfea;border-bottom-color:#0e1f5b;border-right-color:#0e1f5b;background-color:#3b5998;color:#fff;font-size:11px;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;}
+
+.clear{clear:both;}
+
+ul.kvp-list { width: 500px; margin: 0 auto; list-style-type: none; float: left; }
+ul.kvp-list li { clear: both; margin-top: 5px; min-height: 13px; }
+ul.kvp-list li label { width: 150px; display: block; float: left; font-weight: bold; color: #777; }
+ul.kvp-list li div { width: 350px; }

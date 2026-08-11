@@ -1,0 +1,3 @@
+(?xsi)
+<dt>\s*<a.*?>(?<name>\w+\.\w+)</a>.*?</dt>.*?
+<dd>\s*(?<description>.*?)\s+</dd>

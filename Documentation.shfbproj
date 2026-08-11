@@ -1,0 +1,94 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which
+         assemblies to include from solution and project documentation
+         sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2ce5161a-4d35-48e9-af35-57b6fbf46811}</ProjectGuid>
+    <SHFBSchemaVersion>1.8.0.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
+         Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <OutputPath>D:\Pub\Help\</OutputPath>
+    <HtmlHelpName>.NET Facebook API Client Reference</HtmlHelpName>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <FeedbackEMailAddress>fbapi%40socialcash.com</FeedbackEMailAddress>
+    <FeedbackEMailLinkText>fbapi%40socialcash.com</FeedbackEMailLinkText>
+    <Preliminary>True</Preliminary>
+    <ProjectLinkType>Index</ProjectLinkType>
+    <ShowFeedbackControl>False</ShowFeedbackControl>
+    <NamingMethod>MemberName</NamingMethod>
+    <CopyrightHref>http://facebook.codeplex.com</CopyrightHref>
+    <CopyrightText>.NET Facebook API Client by SocialCash</CopyrightText>
+    <ComponentConfigurations>
+    </ComponentConfigurations>
+    <VisibleItems>Attributes, ExplicitInterfaceImplementations, InheritedMembers, InheritedFrameworkMembers, Internals, Protected, ProtectedInternalAsProtected, SealedProtected</VisibleItems>
+    <SandcastlePath>..\..\..\Program Files (x86)\Sandcastle\</SandcastlePath>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="Facebook.Api.Generator\Facebook.Api.Generator.csproj" />
+<DocumentationSource sourceFile="Facebook\Facebook.csproj" />
+<DocumentationSource sourceFile="Facebook.Web\Facebook.Web.csproj" />
+<DocumentationSource sourceFile="Facebook.Web.Mvc\Facebook.Web.Mvc.csproj" /></DocumentationSources>
+    <WorkingPath>..\..\..\SandCastleWorking\</WorkingPath>
+    <KeepLogFile>False</KeepLogFile>
+    <ApiFilter>
+      <Filter entryType="Namespace" fullName="" isExposed="False" xmlns="" />
+      <Filter entryType="Namespace" fullName="Facebook.Json" isExposed="False" xmlns="" />
+      <Filter entryType="Namespace" fullName="Facebook.Json.Converters" isExposed="False" xmlns="" />
+      <Filter entryType="Namespace" fullName="Facebook.Json.Linq" isExposed="False" xmlns="" />
+      <Filter entryType="Namespace" fullName="Facebook.Json.Serialization" isExposed="False" xmlns="" />
+      <Filter entryType="Namespace" fullName="Facebook.Json.Utilities" isExposed="False" xmlns="" />
+    </ApiFilter>
+    <HelpTitle>.NET Facebook API Client Reference</HelpTitle>
+    <ProjectSummary>A .NET client library for the Facebook API that allows developers to create Facebook Applications in C# and VB.NET with support for ASP.NET and ASP.NET MVC.</ProjectSummary>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="Facebook" isDocumented="True" xmlns="">Contains Framework-level types that support the entire client.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Api" isDocumented="True" xmlns="">Contains models and types that support specific areas of the Facebook API.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Api.Controllers" isDocumented="True" xmlns="">Contains controllers that encapsulate groups of API methods.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Configuration" isDocumented="True" xmlns="">Contains types that provide models for configuring the Facebook API client.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Desktop" isDocumented="True" xmlns="">Contains types specific to desktop client applications.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Web" isDocumented="True" xmlns="">Contains types specific to web applications.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Web.Configuration" isDocumented="True" xmlns="">Contains types that provide models for configuring web-specific aspects of the Facebook API client.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Web.Mvc" isDocumented="True" xmlns="">Contains types and helpers specific to the ASP.NET MVC Framework.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Web.Mvc.SocialCash" isDocumented="True" xmlns="">Contains types used for integrtating with &lt;a href="http://socialcash.com"&gt;SocialCash&lt;/a&gt; products.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Web.Security" isDocumented="True" xmlns="">Contains types used for additional authentication functionality.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Web.UI" isDocumented="True" xmlns="">Contains Facebook-specific controls used in WebForms applications.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Facebook.Web.UI.WebControls" isDocumented="True" xmlns="">Contains Facebook-specific controls used in WebForms applications.</NamespaceSummaryItem></NamespaceSummaries>
+  </PropertyGroup>
+  <!-- There are no properties for these two groups but they need to appear in
+       order for Visual Studio to perform the build. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="Facebook.Web.Mvc\Facebook.Web.Mvc.csproj">
+      <Name>Facebook.Web.Mvc</Name>
+      <Project>{FCD44797-2A8A-4ACA-8F7A-9FC81A716A57}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Web\Facebook.Web.csproj">
+      <Name>Facebook.Web</Name>
+      <Project>{341DC58A-D562-4A4C-B444-C9060A4B3F22}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Facebook.Api.Generator\Facebook.Api.Generator.csproj">
+      <Name>Facebook.Api.Generator</Name>
+      <Project>{12E2C20D-38AB-4664-8563-1FEB03AE90B7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Facebook\Facebook.csproj">
+      <Name>Facebook</Name>
+      <Project>{9A24B145-8055-401F-96D5-529D97041641}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Abstractions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Web.Routing, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+  </ItemGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

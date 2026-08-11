@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9A24B145-8055-401F-96D5-529D97041641}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Facebook</RootNamespace>
+    <AssemblyName>Facebook</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Facebook.xml</DocumentationFile>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <CodeAnalysisRules>-Microsoft.Design#CA1012;-Microsoft.Design#CA2210;-Microsoft.Design#CA1040;-Microsoft.Design#CA1005;-Microsoft.Design#CA1020;-Microsoft.Design#CA1021;-Microsoft.Design#CA1010;-Microsoft.Design#CA1011;-Microsoft.Design#CA1009;-Microsoft.Design#CA1050;-Microsoft.Design#CA1026;-Microsoft.Design#CA1019;-Microsoft.Design#CA1031;-Microsoft.Design#CA1047;-Microsoft.Design#CA1000;-Microsoft.Design#CA1048;-Microsoft.Design#CA1051;-Microsoft.Design#CA1002;-Microsoft.Design#CA1061;-Microsoft.Design#CA1006;-Microsoft.Design#CA1046;-Microsoft.Design#CA1045;-Microsoft.Design#CA1065;-Microsoft.Design#CA1038;-Microsoft.Design#CA1008;-Microsoft.Design#CA1028;-Microsoft.Design#CA1064;-Microsoft.Design#CA1004;-Microsoft.Design#CA1035;-Microsoft.Design#CA1063;-Microsoft.Design#CA1032;-Microsoft.Design#CA1023;-Microsoft.Design#CA1033;-Microsoft.Design#CA1039;-Microsoft.Design#CA1016;-Microsoft.Design#CA1014;-Microsoft.Design#CA1017;-Microsoft.Design#CA1018;-Microsoft.Design#CA1027;-Microsoft.Design#CA1059;-Microsoft.Design#CA1060;-Microsoft.Design#CA1034;-Microsoft.Design#CA1013;-Microsoft.Design#CA1036;-Microsoft.Design#CA1044;-Microsoft.Design#CA1041;-Microsoft.Design#CA1025;-Microsoft.Design#CA1052;-Microsoft.Design#CA1053;-Microsoft.Design#CA1057;-Microsoft.Design#CA1058;-Microsoft.Design#CA1001;-Microsoft.Design#CA1049;-Microsoft.Design#CA1054;-Microsoft.Design#CA1056;-Microsoft.Design#CA1055;-Microsoft.Design#CA1030;-Microsoft.Design#CA1003;-Microsoft.Design#CA1007;-Microsoft.Design#CA1043;-Microsoft.Design#CA1024;-Microsoft.Globalization#CA1301;-Microsoft.Globalization#CA1302;-Microsoft.Globalization#CA1308;-Microsoft.Globalization#CA1306;-Microsoft.Globalization#CA1304;-Microsoft.Globalization#CA1305;-Microsoft.Globalization#CA2101;-Microsoft.Globalization#CA1300;-Microsoft.Globalization#CA1307;-Microsoft.Globalization#CA1309;-Microsoft.Interoperability#CA1403;-Microsoft.Interoperability#CA1406;-Microsoft.Interoperability#CA1413;-Microsoft.Interoperability#CA1402;-Microsoft.Interoperability#CA1407;-Microsoft.Interoperability#CA1404;-Microsoft.Interoperability#CA1410;-Microsoft.Interoperability#CA1411;-Microsoft.Interoperability#CA1405;-Microsoft.Interoperability#CA1409;-Microsoft.Interoperability#CA1415;-Microsoft.Interoperability#CA1408;-Microsoft.Interoperability#CA1414;-Microsoft.Interoperability#CA1412;-Microsoft.Interoperability#CA1400;-Microsoft.Interoperability#CA1401;-Microsoft.Maintainability#CA1506;-Microsoft.Maintainability#CA1502;-Microsoft.Maintainability#CA1501;-Microsoft.Maintainability#CA1505;-Microsoft.Maintainability#CA1504;-Microsoft.Maintainability#CA1500;-Microsoft.Mobility#CA1600;-Microsoft.Mobility#CA1601;-Microsoft.Naming#CA1702;-Microsoft.Naming#CA1700;-Microsoft.Naming#CA1712;-Microsoft.Naming#CA1713;-Microsoft.Naming#CA1714;-Microsoft.Naming#CA1709;-Microsoft.Naming#CA1704;-Microsoft.Naming#CA1708;-Microsoft.Naming#CA1715;-Microsoft.Naming#CA1710;-Microsoft.Naming#CA1720;-Microsoft.Naming#CA1707;-Microsoft.Naming#CA1722;-Microsoft.Naming#CA1711;-Microsoft.Naming#CA1716;-Microsoft.Naming#CA1717;-Microsoft.Naming#CA1725;-Microsoft.Naming#CA1719;-Microsoft.Naming#CA1721;-Microsoft.Naming#CA1701;-Microsoft.Naming#CA1703;-Microsoft.Naming#CA1724;-Microsoft.Naming#CA1726;-Microsoft.Performance#CA1809;-Microsoft.Performance#CA1811;-Microsoft.Performance#CA1812;-Microsoft.Performance#CA1813;-Microsoft.Performance#CA1823;-Microsoft.Performance#CA1800;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810;-Microsoft.Performance#CA1824;-Microsoft.Performance#CA1822;-Microsoft.Performance#CA1815;-Microsoft.Performance#CA1814;-Microsoft.Performance#CA1819;-Microsoft.Performance#CA1821;-Microsoft.Performance#CA1804;-Microsoft.Performance#CA1820;-Microsoft.Performance#CA1802;-Microsoft.Portability#CA1903;-Microsoft.Portability#CA1901;-Microsoft.Portability#CA1900;-Microsoft.Reliability#CA2001;-Microsoft.Reliability#CA2002;-Microsoft.Reliability#CA2003;-Microsoft.Reliability#CA2004;-Microsoft.Reliability#CA2006;-Microsoft.Security#CA2116;-Microsoft.Security#CA2117;-Microsoft.Security#CA2105;-Microsoft.Security#CA2115;-Microsoft.Security#CA2102;-Microsoft.Security#CA2104;-Microsoft.Security#CA2122;-Microsoft.Security#CA2114;-Microsoft.Security#CA2123;-Microsoft.Security#CA2111;-Microsoft.Security#CA2108;-Microsoft.Security#CA2107;-Microsoft.Security#CA2103;-Microsoft.Security#CA2118;-Microsoft.Security#CA2109;-Microsoft.Security#CA2119;-Microsoft.Security#CA2106;-Microsoft.Security#CA2112;-Microsoft.Security#CA2120;-Microsoft.Security#CA2121;-Microsoft.Security#CA2126;-Microsoft.Security#CA2124;-Microsoft.Security#CA2127;-Microsoft.Security#CA2128;-Microsoft.Security#CA2129;-Microsoft.Usage#CA2243;-Microsoft.Usage#CA2236;-Microsoft.Usage#CA1816;-Microsoft.Usage#CA2227;-Microsoft.Usage#CA2213;-Microsoft.Usage#CA2216;-Microsoft.Usage#CA2214;-Microsoft.Usage#CA2222;-Microsoft.Usage#CA1806;-Microsoft.Usage#CA2217;-Microsoft.Usage#CA2212;-Microsoft.Usage#CA2219;-Microsoft.Usage#CA2201;-Microsoft.Usage#CA2228;-Microsoft.Usage#CA2221;-Microsoft.Usage#CA2220;-Microsoft.Usage#CA2240;-Microsoft.Usage#CA2229;-Microsoft.Usage#CA2238;-Microsoft.Usage#CA2207;-Microsoft.Usage#CA2208;-Microsoft.Usage#CA2235;-Microsoft.Usage#CA2237;-Microsoft.Usage#CA2232;-Microsoft.Usage#CA2223;-Microsoft.Usage#CA2211;-Microsoft.Usage#CA2233;-Microsoft.Usage#CA2225;-Microsoft.Usage#CA2226;-Microsoft.Usage#CA2231;-Microsoft.Usage#CA2224;-Microsoft.Usage#CA2218;-Microsoft.Usage#CA2234;-Microsoft.Usage#CA2239;-Microsoft.Usage#CA2200;-Microsoft.Usage#CA1801;-Microsoft.Usage#CA2242;-Microsoft.Usage#CA2205;-Microsoft.Usage#CA2230</CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Facebook.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\DashboardActionLink.cs" />
+    <Compile Include="Api\DashboardCountResult.cs" />
+    <Compile Include="Api\DashboardMultiSetCountItem.cs" />
+    <Compile Include="Api\RemoveActivityResult.cs" />
+    <Compile Include="Api\DashboardActivity.cs" />
+    <Compile Include="Api\DashboardActivityPublishItem.cs" />
+    <Compile Include="Api\MultiAddNewsResult.cs" />
+    <Compile Include="Api\ApplicationMetricPeriod.cs" />
+    <Compile Include="Api\Arg.cs" />
+    <Compile Include="Api\Batch.cs" />
+    <Compile Include="Api\Controllers\NotificationsController.api.cs" />
+    <Compile Include="Api\GlobalNewsItem.cs" />
+    <Compile Include="Api\IFacebookAttributeBasedList.cs" />
+    <Compile Include="Api\FacebookAttributeBasedList.cs" />
+    <Compile Include="Api\FacebookAttributeBasedObjectExtensions.cs" />
+    <Compile Include="Api\FacebookAttributeBasedObjectBase.cs" />
+    <Compile Include="Api\FamilyInfo.cs" />
+    <Compile Include="Api\MultiNewsRequestItem.cs" />
+    <Compile Include="Api\MultiClearNewsResult.cs" />
+    <Compile Include="Api\MultiNews.cs" />
+    <Compile Include="Api\DashboardItem.cs" />
+    <Compile Include="Api\NewsItem.cs" />
+    <Compile Include="Api\QueueItem.cs" />
+    <Compile Include="Api\CachePropertyAttribute.cs" />
+    <Compile Include="Api\Controllers\EventsController.api.cs" />
+    <Compile Include="Api\Controllers\StreamController.api.cs" />
+    <Compile Include="Api\UserProperty.cs" />
+    <Compile Include="ExtendedPermission.cs" />
+    <Compile Include="Api\FacebookArgsObjectBase.cs" />
+    <Compile Include="IFacebookAttributeBasedObject.cs" />
+    <Compile Include="PermissionAttribute.cs" />
+    <Compile Include="FacebookApiTimeoutException.cs" />
+    <Compile Include="FieldNameAttribute.cs" />
+    <Compile Include="IXmlSerializableDictionary.cs" />
+    <Compile Include="Api\Queue.cs" />
+    <Compile Include="Api\StreamPublishItem.cs" />
+    <Compile Include="CacheScope.cs" />
+    <Compile Include="Api\Controllers\AdminController.api.cs" />
+    <Compile Include="Api\Controllers\AuthController.api.cs" />
+    <Compile Include="Api\Controllers\FqlController.api.cs" />
+    <Compile Include="Api\Controllers\UsersController.api.cs" />
+    <Compile Include="Api\Controllers\VideoController.api.cs" />
+    <Compile Include="Api\FacebookApiException.cs" />
+    <Compile Include="Api\FacebookArgs.cs" />
+    <Compile Include="Api\FacebookObjectExtensions.cs" />
+    <Compile Include="Api\FeedStorySize.cs" />
+    <Compile Include="Api\FqlMultiquery.cs" />
+    <Compile Include="Api\FqlQuery.cs" />
+    <Compile Include="Api\FqlQueryReturnType.cs" />
+    <Compile Include="Api\IQueueItem.cs" />
+    <Compile Include="Api\CacheableAttribute.cs" />
+    <Compile Include="Api\IFacebookObject.cs" />
+    <Compile Include="Api\IFqlQuery.cs" />
+    <Compile Include="Api\PageActionStory.cs" />
+    <Compile Include="Api\StreamType.cs" />
+    <Compile Include="Api\User.api.cs" />
+    <Compile Include="Api\UserActionStory.cs" />
+    <Compile Include="Async\FacebookContextExtensions.cs" />
+    <Compile Include="Async\FacebookControllerExtensions.cs" />
+    <Compile Include="Async\FacebookRequestExtensions.cs" />
+    <Compile Include="Configuration\FacebookApplicationElement.cs" />
+    <Compile Include="Configuration\FacebookApplicationElementCollection.cs" />
+    <Compile Include="Configuration\FacebookApiSection.cs" />
+    <Compile Include="Configuration\FacebookSectionGroup.cs" />
+    <Compile Include="Offline\FacebookOfflineAccessContext.cs" />
+    <Compile Include="RequestMode.cs" />
+    <Compile Include="Serialization\SerializationExtensions.cs" />
+    <Compile Include="Text\DelimitationExtensions.cs" />
+    <Compile Include="Web\HttpContextExtensions.cs" />
+    <Compile Include="XmlSerializableDictionary.cs" />
+    <Compile Include="Web\Configuration\GetPublicInfoMode.cs" />
+    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="Desktop\Configuration\DesktopAuthenticationElement.cs" />
+    <Compile Include="Desktop\Configuration\DesktopAuthenticationElementCollection.cs" />
+    <Compile Include="Desktop\Configuration\FacebookDesktopSection.cs" />
+    <Compile Include="Desktop\FacebookDesktopContext.api.cs" />
+    <Compile Include="Desktop\SettingsSessionStorageProvider.cs" />
+    <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="Api\Sex.cs" />
+    <Compile Include="Api\MeetingFor.cs" />
+    <Compile Include="Api\MeetingSex.cs" />
+    <Compile Include="Api\RelationshipStatus.cs" />
+    <Compile Include="ApplicationType.cs" />
+    <Compile Include="Api\FacebookList.cs" />
+    <Compile Include="FacebookAsyncState.cs" />
+    <Compile Include="FacebookCache.cs" />
+    <Compile Include="FacebookContextBase.api.cs" />
+    <Compile Include="FacebookApiController.cs" />
+    <Compile Include="Api\FacebookObjectAttribute.cs" />
+    <Compile Include="Api\FacebookObjectBase.cs" />
+    <Compile Include="FacebookContextBase.Controllers.api.cs" />
+    <Compile Include="FacebookException.cs" />
+    <Compile Include="FacebookRequest.cs" />
+    <Compile Include="FacebookResponse.cs" />
+    <Compile Include="FacebookUtility.cs" />
+    <Compile Include="ICacheWrapper.cs" />
+    <Compile Include="IFacebookContext.cs" />
+    <Compile Include="Api\IFacebookList.cs" />
+    <Compile Include="IFacebookResponse.cs" />
+    <Compile Include="Api\IFqlMultiquery.cs" />
+    <Compile Include="ISessionInfo.cs" />
+    <Compile Include="FacebookJsonResponse.cs" />
+    <Compile Include="MD5Extensions.cs" />
+    <Compile Include="ObjectCache.cs" />
+    <Compile Include="ObjectExtensions.cs" />
+    <Compile Include="ObjectFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionCache.cs" />
+    <Compile Include="SessionStorageProviderBase.cs" />
+    <Compile Include="StaticDictionaryCache.cs" />
+    <Compile Include="TypeExtensions.cs" />
+    <Compile Include="UnixDateTime.cs" />
+    <Compile Include="Web\Configuration\FacebookWebConfigurationExtensions.cs" />
+    <Compile Include="Web\Configuration\FacebookWebSection.cs" />
+    <Compile Include="Web\FacebookHttpContext.api.cs" />
+    <Compile Include="Web\FacebookHttpModule.cs" />
+    <Compile Include="Web\FacebookWebApplication.cs" />
+    <Compile Include="Web\FacebookWebEventArgs.cs" />
+    <Compile Include="Web\FacebookWebEventHandler.cs" />
+    <Compile Include="Web\FacebookHttpRequest.cs" />
+    <Compile Include="Web\FacebookHttpSession.cs" />
+    <Compile Include="Web\HttpCache.cs" />
+    <Compile Include="Api\SessionInfo.cs" />
+    <Compile Include="Api\FqlResult.cs" />
+    <Compile Include="Api\Controllers\DashboardController.cs" />
+    <Compile Include="Api\UserStatus.api.g.cs" />
+    <Compile Include="Api\Comment.api.g.cs" />
+    <Compile Include="Api\Profile.api.g.cs" />
+    <Compile Include="Api\IdMap.api.g.cs" />
+    <Compile Include="Api\PublicSessionData.api.g.cs" />
+    <Compile Include="Api\Location.api.g.cs" />
+    <Compile Include="Api\ConnectAccountInfo.api.g.cs" />
+    <Compile Include="Api\Event.api.g.cs" />
+    <Compile Include="Api\EventMember.api.g.cs" />
+    <Compile Include="Api\Group.api.g.cs" />
+    <Compile Include="Api\GroupMember.api.g.cs" />
+    <Compile Include="Api\GroupMembers.api.g.cs" />
+    <Compile Include="Api\EventMembers.api.g.cs" />
+    <Compile Include="Api\NotificationCount.api.g.cs" />
+    <Compile Include="Api\Notifications.api.g.cs" />
+    <Compile Include="Api\Notification.api.g.cs" />
+    <Compile Include="Api\Photo.api.g.cs" />
+    <Compile Include="Api\PhotoTag.api.g.cs" />
+    <Compile Include="Api\Album.api.g.cs" />
+    <Compile Include="Api\Video.api.g.cs" />
+    <Compile Include="Api\VideoTag.api.g.cs" />
+    <Compile Include="Api\VideoLimits.api.g.cs" />
+    <Compile Include="Api\Affiliation.api.g.cs" />
+    <Compile Include="Api\HsInfo.api.g.cs" />
+    <Compile Include="Api\EducationInfo.api.g.cs" />
+    <Compile Include="Api\WorkInfo.api.g.cs" />
+    <Compile Include="Api\User.api.g.cs">
+      <DependentUpon>User.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\FriendInfo.api.g.cs" />
+    <Compile Include="Api\Friendlist.api.g.cs" />
+    <Compile Include="Api\FriendlistMember.api.g.cs" />
+    <Compile Include="Api\ObjectTypeInfo.api.g.cs" />
+    <Compile Include="Api\ObjectPropertyInfo.api.g.cs" />
+    <Compile Include="Api\AssocObjectType.api.g.cs" />
+    <Compile Include="Api\ObjectAssocInfo.api.g.cs" />
+    <Compile Include="Api\ObjectAssociation.api.g.cs" />
+    <Compile Include="Api\Preference.api.g.cs" />
+    <Compile Include="Api\PageHours.api.g.cs" />
+    <Compile Include="Api\PageParking.api.g.cs" />
+    <Compile Include="Api\PageFan.api.g.cs" />
+    <Compile Include="Api\PageAdmin.api.g.cs" />
+    <Compile Include="Api\PageRestaurantServices.api.g.cs" />
+    <Compile Include="Api\PageRestaurantSpecialties.api.g.cs" />
+    <Compile Include="Api\PagePaymentOptions.api.g.cs" />
+    <Compile Include="Api\Page.api.g.cs" />
+    <Compile Include="Api\Cookie.api.g.cs" />
+    <Compile Include="Api\Phrase.api.g.cs" />
+    <Compile Include="Api\DeveloperInfo.api.g.cs" />
+    <Compile Include="Api\AppInfo.api.g.cs" />
+    <Compile Include="Api\NotificationData.api.g.cs" />
+    <Compile Include="Api\Note.api.g.cs" />
+    <Compile Include="Api\Link.api.g.cs" />
+    <Compile Include="Api\Metrics.api.g.cs" />
+    <Compile Include="Api\ShortStoryTemplate.api.g.cs" />
+    <Compile Include="Api\FullStoryTemplate.api.g.cs" />
+    <Compile Include="Api\ActionLink.api.g.cs" />
+    <Compile Include="Api\StreamActionLink.api.g.cs" />
+    <Compile Include="Api\TemplateBundle.api.g.cs" />
+    <Compile Include="Api\FeedStory.api.g.cs" />
+    <Compile Include="Api\InfoItem.api.g.cs" />
+    <Compile Include="Api\InfoField.api.g.cs" />
+    <Compile Include="Api\UserInfo.api.g.cs" />
+    <Compile Include="Api\CustomTagParameter.api.g.cs" />
+    <Compile Include="Api\CustomTag.api.g.cs" />
+    <Compile Include="Api\DashboardBundle.api.g.cs" />
+    <Compile Include="Api\DashboardNews.api.g.cs" />
+    <Compile Include="Api\Privacy.api.g.cs" />
+    <Compile Include="Api\StreamComments.api.g.cs" />
+    <Compile Include="Api\StreamLikes.api.g.cs" />
+    <Compile Include="Api\StreamVideo.api.g.cs" />
+    <Compile Include="Api\StreamPhoto.api.g.cs" />
+    <Compile Include="Api\StreamSwf.api.g.cs" />
+    <Compile Include="Api\StreamMusic.api.g.cs" />
+    <Compile Include="Api\StreamMedia.api.g.cs" />
+    <Compile Include="Api\StreamProperty.api.g.cs" />
+    <Compile Include="Api\StreamAttachment.api.g.cs" />
+    <Compile Include="Api\StreamAppData.api.g.cs" />
+    <Compile Include="Api\StreamPost.api.g.cs" />
+    <Compile Include="Api\PhotoFeedback.api.g.cs" />
+    <Compile Include="Api\Connection.api.g.cs" />
+    <Compile Include="Api\StreamData.api.g.cs" />
+    <Compile Include="Api\StreamFilter.api.g.cs" />
+    <Compile Include="Api\LinkStat.api.g.cs" />
+    <Compile Include="Api\Translation.api.g.cs" />
+    <Compile Include="Api\TranslationInfo.api.g.cs" />
+    <Compile Include="Api\LocaleString.api.g.cs" />
+    <Compile Include="Api\LocaleData.api.g.cs" />
+    <Compile Include="Api\Message.api.g.cs" />
+    <Compile Include="Api\Thread.api.g.cs" />
+    <Compile Include="Api\MailboxFolder.api.g.cs" />
+    <Compile Include="FacebookContextBase.api.g.cs">
+      <DependentUpon>FacebookContextBase.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desktop\FacebookDesktopContext.api.g.cs">
+      <DependentUpon>FacebookDesktopContext.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web\FacebookHttpContext.api.g.cs">
+      <DependentUpon>FacebookHttpContext.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Controllers\AuthController.api.g.cs">
+      <DependentUpon>AuthController.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Controllers\ConnectController.api.g.cs" />
+    <Compile Include="Api\Controllers\EventsController.api.g.cs">
+      <DependentUpon>EventsController.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Controllers\NotesController.api.g.cs" />
+    <Compile Include="Api\Controllers\StatusController.api.g.cs" />
+    <Compile Include="Api\Controllers\StreamController.api.g.cs">
+      <DependentUpon>StreamController.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Controllers\LinksController.api.g.cs" />
+    <Compile Include="Api\Controllers\CommentsController.api.g.cs" />
+    <Compile Include="Api\Controllers\FbmlController.api.g.cs" />
+    <Compile Include="Api\Controllers\FriendsController.api.g.cs" />
+    <Compile Include="Api\Controllers\GroupsController.api.g.cs" />
+    <Compile Include="Api\Controllers\IntlController.api.g.cs" />
+    <Compile Include="Api\Controllers\DataController.api.g.cs" />
+    <Compile Include="Api\Controllers\LiveMessageController.api.g.cs" />
+    <Compile Include="Api\Controllers\NotificationsController.api.g.cs">
+      <DependentUpon>NotificationsController.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Controllers\MessageController.api.g.cs" />
+    <Compile Include="Api\Controllers\PhotosController.api.g.cs" />
+    <Compile Include="Api\Controllers\VideoController.api.g.cs">
+      <DependentUpon>VideoController.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Controllers\UsersController.api.g.cs">
+      <DependentUpon>UsersController.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Controllers\PagesController.api.g.cs" />
+    <Compile Include="Api\Controllers\AdminController.api.g.cs">
+      <DependentUpon>AdminController.api.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Api\Controllers\ApplicationController.api.g.cs" />
+    <Compile Include="Api\ErrorCode.api.g.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NewtonSoft.Json\Newtonsoft.Json.csproj">
+      <Project>{A9AE40FF-1A21-414A-9FE7-3BE13644CC6D}</Project>
+      <Name>Newtonsoft.Json</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
